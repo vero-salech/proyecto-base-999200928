@@ -4,3 +4,14 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primery-color: #344c80;
+    --grey-900: #0F191A;
+    --grey-700: #212C32;
+    --grey-300: #ccdaea;
+    --grey-200: #DEE7F1FF;
+    --light-blue: #536DA4FF;
+    --message-blue: #bbcdf3e3;
+    --button-blue: #294072;
+}
+
