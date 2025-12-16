@@ -86,7 +86,7 @@ aside header{
     background-color: white;
     display: grid;
     grid-template-columns: 320px 1fr;
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
@@ -180,6 +180,7 @@ img{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    overflow-y: auto;
 }
 
 .message {
