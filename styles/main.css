@@ -15,7 +15,7 @@
     --grey-300: #fefff6;
     --grey-200: #f1f2f6;
     --lighter-blue: #536DA4FF;
-    --message-blue: #bbcdf3e3;
+    --message-blue: #c7d6f7e3;
     --button-blue: #294072;
     --primary-font: "Roboto", sans-serif;
 }
@@ -172,7 +172,40 @@ img{
     color: var(--grey-700)
 }
 
- /* Agregar estilos para los mensajes */
+ /* Estilos para los mensajes */
+
+.messages {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.message {
+    background-color: var(--grey-300);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.240);
+    padding: 10px;
+    width: 60%;
+}
+
+.message .time {
+    color: var(--grey-700);
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: end;
+}
+
+.me {
+    align-self: end;
+    background-color: var(--message-blue);
+}
+
+.chat-panel {
+    display: flex;
+    flex-direction: column;
+}
 
  footer {
     display: flex;
@@ -246,3 +279,13 @@ img{
     transform: scale(0.98);
  }
 
+ /* responsive design */
+
+ @media (max-width:880px){
+    .app{
+        grid-template-columns: 1fr;
+    }
+    aside{
+        display: none;
+    }
+ }
